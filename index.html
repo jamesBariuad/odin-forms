@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="picture-container">
+      <div id="logo-holder">
+        <img src="./assets/images/odin-lined.png" alt="" />
+        ODIN
+      </div>
+      <div id="photo-credits">
+        Photo by <u>Hallie West</u> on <u>Unsplash</u>
+      </div>
+    </div>
+
+    <div id="right-side">
+      <div id="top-text">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <i>now</i> to get started.
+        <br />
+        <br />
+        You <i>know</i> you want to.
+      </div>
+      <div id="form-container">
+        <h3>Lets do this!</h3>
+        <form action="" id="sign-up-form">
+          <p>
+            <label for="first-name">FIRST NAME</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="name"
+            />
+          </p>
+
+          <p>
+            <label for="last-name">LAST NAME</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              autocomplete="family-name"
+            />
+          </p>
+
+          <p>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" autocomplete="email" />
+          </p>
+
+          <p>
+            <label for="phone">PHONE NUMBER</label>
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone"
+              autocomplete="tel"
+            />
+          </p>
+
+          <p>
+            <label for="pwd1">PASSWORD</label>
+            <input type="password" name="password" id="pwd1" />
+          </p>
+
+          <p>
+            <label for="pwd2">CONFIRM PASSWORD</label>
+            <input type="password" name="password" id="pwd2" />
+          </p>
+        </form>
+      </div>
+      <div id="button-container">
+        <button type="submit" form="sign-up-form">Create Account</button>
+        <div>Already have an account? <a href="">Log in</a></div>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

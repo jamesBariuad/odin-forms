@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#picture-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  align-items: center;
+  background-position: center;
+}
+
+@font-face {
+  font-family: odin;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+#logo-holder {
+  display: flex;
+  font-family: odin;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin-top: 30%;
+  padding: 1rem 0px;
+}
+
+#logo-holder > img {
+  width: 120px;
+}
+
+#photo-credits {
+  position: absolute;
+  bottom: 20px;
+
+  color: white;
+  text-align: center;
+}
+
+#right-side {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+#top-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  padding: 10% 30% 5% 5%;
+}
+
+#form-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 50px 0px 50px 5%;
+  background-color: white;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 100px;
+  width: 80%;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: #e5e7eb 1px solid;
+  padding-left: 0.5em;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+  border: blue 1px solid;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#button-container {
+  padding: 50px 0px 50px 5%;
+  background-color: whitesmoke;
+  padding-top: auto;
+  height: auto;
+}
+
+button {
+  color: whitesmoke;
+  border: none;
+  background-color: #596d48;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1186px) {
+  body {
+    flex-direction: column;
+  }
+  #picture-container {
+    width: 100%;
+  }
+  #logo-holder {
+    margin: 0;
+  }
+  #photo-credits {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
